@@ -117,7 +117,7 @@
               <a class="button button-light" href="#contacto">¿Hablamos? <svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chat"></use></svg></a>
             </div>
             <div class="hero-trust">
-              <span>🎯 Talento local</span><span>👏 Sin coste salarial ni cotizaciones</span
+              <span>🎯Talento local</span><span>👏 Sin coste salarial ni cotizaciones</span
               ><span>⛓️‍💥 Sin obligación de contratar</span>
             </div>
           </div>
@@ -432,57 +432,24 @@
           <div class="contact-form-card">
             <h3>Escríbenos y nos pondremos en contacto</h3>
             <p>Déjanos tus datos y te responderemos. Puedes proponer un horario o una videollamada.</p>
-            <form id="contact-form" novalidate method="POST">
-              <input type="hidden" name="_subject" value="Nueva consulta · Ruta del Talento" />
-              <div class="form-trap" aria-hidden="true"><label for="contact-website">Deja este campo vacío</label><input id="contact-website" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
-              <label for="contact-name">Nombre de la persona de contacto <b>*</b></label
-              ><input
-                id="contact-name"
-                name="nombre"
-                required
-                autocomplete="name"
-                placeholder="Nombre y apellidos"
-              /><label for="company">Empresa u organización <b>*</b></label
-              ><input
-                id="company"
-                name="empresa"
-                required
-                autocomplete="organization"
-                placeholder="Nombre de la empresa"
-              /><label for="email">Correo de contacto <b>*</b></label
-              ><input
-                type="email"
-                id="email"
-                name="email"
-                required
-                autocomplete="email"
-                placeholder="nombre@empresa.es"
-              /><label for="phone">Teléfono <small>(opcional)</small></label
-              ><input type="tel" id="phone" name="telefono" autocomplete="tel" inputmode="tel" placeholder="Por si prefieres que te llamemos" maxlength="45" /><label for="topic">Me interesa</label
-              ><select id="topic" name="interes">
-                <option value="Valorar posibilidades">Valorar posibilidades</option>
-                <option value="SMR">SMR · Sistemas y redes</option>
-                <option value="DAM">DAM · Aplicaciones y digitalización</option>
-                <option value="Explorar">Me gustaría explorar posibilidades</option></select
-              ><label for="message">¿Qué necesitas? <small>(opcional)</small></label
-              ><textarea
-                id="message"
-                name="necesidades"
-                rows="3"
-                maxlength="2500"
-                placeholder="Por ejemplo: soporte informático, redes, una aplicación, datos, automatización o ideas por explorar"
-              ></textarea
-              ><label for="availability">¿Cuándo te viene bien que hablemos? <small>(opcional)</small></label
-              ><textarea id="availability" name="disponibilidad" rows="2" maxlength="700" placeholder="Por ejemplo: martes o jueves por la mañana, de 10:00 a 13:00. También podemos hablar por Google Meet."></textarea
-              ><p class="form-privacy">Utilizaremos tus datos para responder a tu consulta. El formulario se envía a través del servicio externo Formspree. No incluyas datos sensibles.</p
-              ><button type="submit" id="contact-submit" class="button button-primary">Enviar consulta <svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-send"></use></svg></button>
-              <p class="form-note">
-                Envío directo desde esta página, sin abrir tu aplicación de correo. No compartas información confidencial.
-              </p>
-              <p class="form-feedback" id="form-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
-              <p class="form-alternative">¿Prefieres escribir directamente? <a href="mailto:jarcdia091@g.educaand.es">jarcdia091@g.educaand.es</a></p>
-              <a id="meeting-link" class="meeting-link" hidden target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-calendar"></use></svg> Reservar una videollamada</a>
-            </form>
+            <div class="google-form-embed">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfvinOcFLW3T7idqEJWVzoX1555A8ETyaifuHnNfGquc0lWXg/viewform?embedded=true"
+                title="Formulario de contacto de Ruta del Talento"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                >Cargando el formulario…</iframe
+              >
+            </div>
+            <p class="google-form-alternative">
+              ¿No se muestra el formulario?
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvinOcFLW3T7idqEJWVzoX1555A8ETyaifuHnNfGquc0lWXg/viewform" target="_blank" rel="noopener noreferrer">Abrir el formulario en una pestaña nueva <span aria-hidden="true">↗</span></a>
+            </p>
+            <p class="google-form-direct">
+              ¿Prefieres escribir directamente?
+              <a href="mailto:jarcdia091@g.educaand.es">jarcdia091@g.educaand.es</a>
+            </p>
           </div>
         </div>
       </section>

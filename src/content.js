@@ -1,8 +1,5 @@
 /* Edición editorial: la web distingue formación del alumnado, competencias verificadas y plan organizativo propuesto. */
 window.TALENTO_CONFIG = {
-  contactEmail: 'jarcdia091@g.educaand.es', // Destinatario de las notificaciones: configurarlo y verificarlo en Formspree.
-  formEndpoint: '', // PEGAR aquí https://formspree.io/f/XXXXXXXX desde la cuenta Formspree autorizada.
-  appointmentBookingUrl: '', // Opcional: URL pública real de Google Calendar > Horarios de citas, tras comprobar permisos.
   // Introducir SOLO entidades con colaboración histórica contrastada. Se muestran nombres tipográficos, no logos.
   partners: [], // [{name:'Entidad', verified:true}]
   photos: {

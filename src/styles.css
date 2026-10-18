@@ -373,3 +373,19 @@ html,body{overflow-x:clip}
  .hero-art{height:clamp(300px,82vw,380px)}
  .hero-photo{top:3px;right:0;width:97%;height:97%}
 }
+
+/* El iframe conserva el ancho de la tarjeta y evita el ancho fijo del código de Google. */
+.contact-form-card:has(.google-form-embed){padding:32px 28px 24px}
+.contact-form-card:has(.google-form-embed) h3{margin-bottom:8px}
+.contact-form-card:has(.google-form-embed)>p:first-of-type{margin-bottom:20px}
+.google-form-embed{position:relative;width:100%;min-width:0;height:1120px;overflow:hidden;border:0;border-radius:12px;background:#fff}
+/* Google no ofrece controles para retirar su cabecera. Se recorta solo visualmente
+   porque el título y la introducción ya aparecen, con mejor jerarquía, en esta tarjeta. */
+.google-form-embed iframe{display:block;width:calc(100% + 52px);height:1469px;max-width:none;border:0;border-radius:12px;background:#fff;transform:translate(-26px,-190px);transform-origin:top left}
+/* Esta máscara absorbe los pocos píxeles que Google puede dejar visibles al recalcular su cabecera. */
+.google-form-embed:after{content:"";position:absolute;z-index:1;top:0;right:0;left:0;height:28px;background:#fff;pointer-events:none}
+.google-form-alternative,.google-form-direct{margin:18px 0 0!important;font-size:14px!important;line-height:1.5;color:#58748d}
+.google-form-alternative{padding-top:14px;border-top:1px solid #dbe8f3}
+.google-form-alternative a,.google-form-direct a{color:#1769b8;font-weight:760}
+.google-form-alternative a:hover,.google-form-direct a:hover{color:#0c4d91}
+@media(max-width:680px){.contact-form-card:has(.google-form-embed){padding:24px 18px 20px}.google-form-embed{height:1235px;border-radius:10px}.google-form-embed iframe{width:calc(100% + 30px);height:1700px;border-radius:10px;transform:translate(-15px,-180px)}.google-form-embed:after{height:62px}}
