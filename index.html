@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+    <meta name="theme-color" content="#f5faff" />
+    <meta
+      name="description"
+      content="Conoce talento tecnológico local del IES Castillo de Luna. Estudiantes de SMR y DAM con formación práctica, sin coste salarial ni cotizaciones para la empresa. Buscamos el mejor encaje y acompañamos la colaboración."
+    />
+    <meta property="og:title" content="Ruta del Talento | IES Castillo de Luna" />
+    <meta
+      property="og:description"
+      content="Talento próximo, formación técnica y ganas de aportar. Sistemas, redes, aplicaciones y digitalización para necesidades reales de tu empresa."
+    />
+    <title>Ruta del Talento | Talento tecnológico local para tu empresa · Rota</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/LogoInstituto.svg" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script defer src="./src/content.js"></script>
+    <script defer src="./src/app.js"></script>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true" focusable="false"><defs><symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8A8.5 8.5 0 0 1 12.5 20a8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 12.5 3a8.5 8.5 0 0 1 8.5 8.5Z"/></symbol><symbol id="icon-laptop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M2 20h20M8 9l-2 2 2 2m8-4 2 2-2 2m-4-5-1 6"/></symbol><symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol><symbol id="icon-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m2 12 3-4 4-1 4 2 4-2 3 2 2 4-5 6-4-2-3 2-3-2-3-5Z"/><path d="m9 7 3 3 2 1 3-4M7 15l4 3m1-5 4 3"/></symbol><symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol><symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18m-12 5 2 2 4-4"/></symbol><symbol id="icon-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol><symbol id="icon-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7L12 3Zm7 13 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16ZM4 2l.6 1.4L6 4l-1.4.6L4 6l-.6-1.4L2 4l1.4-.6L4 2Z"/></symbol><symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/></symbol><symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 5 5L20 6"/></symbol><symbol id="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol></defs></svg>
+    <a class="skip" href="#contenido">Saltar al contenido</a>
+    <div class="scroll-line" aria-hidden="true"><span id="scroll-progress"></span></div>
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#inicio" aria-label="IES Castillo de Luna, inicio"
+          ><img class="brand-logo" src="./assets/LogoInstituto.svg" alt="Logotipo del IES Castillo de Luna" />
+          <span
+            ><strong>IES Castillo de Luna</strong
+            ><small>ROTA · CÁDIZ</small></span
+          ></a
+        >
+        <nav class="nav-desktop" aria-label="Navegación principal">
+          <a data-nav="inicio" href="#inicio">Inicio</a
+          ><a data-nav="ventajas" href="#ventajas">Beneficios</a
+          ><a data-nav="perfiles" href="#perfiles">SMR y DAM</a
+          ><a data-nav="proceso" href="#proceso">Cómo colaboramos</a
+          ><a data-nav="contacto" href="#contacto">Contacto</a>
+        </nav>
+        <div class="header-actions">
+          <a class="header-cta" href="#contacto">Hablemos <svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chat"></use></svg></a
+          ><button
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="menu-panel"
+            type="button"
+          >
+            <span class="hamburger" aria-hidden="true"><i></i><i></i><i></i></span><span>Menú</span>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-location">
+        <span class="location-number" id="mobile-chapter">01 / 05</span
+        ><span id="mobile-location-text">¿Por qué colaborar?</span>
+        <div class="mini-track" aria-hidden="true"><span id="mini-progress"></span></div>
+      </div>
+    </header>
+    <div id="menu-overlay" class="menu-overlay" hidden></div>
+    <div id="menu-panel" class="menu-panel" hidden>
+      <p>EXPLORA EL RECORRIDO</p>
+      <nav aria-label="Navegación móvil">
+        <a data-nav="inicio" href="#inicio"><span>01</span> Inicio <b><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chevron"></use></svg></b></a
+        ><a data-nav="ventajas" href="#ventajas"><span>02</span> Beneficios <b><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chevron"></use></svg></b></a
+        ><a data-nav="perfiles" href="#perfiles"><span>03</span> SMR y DAM <b><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chevron"></use></svg></b></a
+        ><a data-nav="proceso" href="#proceso"><span>04</span> Cómo colaboramos <b><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chevron"></use></svg></b></a
+        ><a data-nav="contacto" href="#contacto"><span>05</span> Hablemos <b><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chevron"></use></svg></b></a>
+      </nav>
+      <small>Tu empresa marca el punto de partida.</small>
+    </div>
+    <!-- Ruta de navegación GLOBAL. Su indicador acompaña el scroll por TODAS las secciones. -->
+    <aside class="route-dock" aria-label="Ruta de navegación por las secciones">
+      <span class="route-dock-title">TU RECORRIDO</span>
+      <div class="route-rail" id="route-rail">
+        <span class="rail-bg"></span><span class="rail-fill" id="rail-fill"></span
+        ><span class="rail-traveler" id="rail-traveler" aria-hidden="true">↓</span>
+        <a href="#inicio" data-route="inicio"><i></i><span>Por qué</span></a>
+        <a href="#ventajas" data-route="ventajas"><i></i><span>Ventajas</span></a>
+        <a href="#perfiles" data-route="perfiles"><i></i><span>Quiénes y cuándo</span></a>
+        <a href="#proceso" data-route="proceso"><i></i><span>Cómo</span></a>
+        <a href="#contacto" data-route="contacto"><i></i><span>Hablemos</span></a>
+      </div>
+      <div class="route-count"><strong id="route-count">01</strong><span>/ 05</span></div>
+    </aside>
+    <main id="contenido">
+      <section
+        class="hero chapter"
+        id="inicio"
+        data-label="¿Por qué colaborar?"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-layout">
+          <div class="hero-copy">
+            <div class="kicker">
+              <span class="kicker-dot"></span> FP DUAL · IES CASTILLO DE LUNA · ROTA (CÁDIZ)
+            </div>
+            <h1 id="hero-title">
+              Tu empresa tiene retos.<br /><em>Nosotros formamos talento.</em>
+            </h1>
+            <p>
+              Acerca a tu empresa estudiantes de Informática de <strong>SMR y DAM</strong>, con
+              preparación técnica, motivación y ganas de participar en retos reales: soporte, redes,
+              aplicaciones, datos y digitalización.
+              <strong
+                >Conectamos con lo que necesitas, buscamos el mejor encaje y te acompañamos en todo
+                el proceso.</strong
+              >
+            </p>
+            <div class="hero-buttons">
+              <a class="button button-primary" href="#perfiles"
+                >Descubre SMR y DAM <svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-laptop"></use></svg></a
+              >
+              <a class="button button-light" href="#contacto">¿Hablamos? <svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chat"></use></svg></a>
+            </div>
+            <div class="hero-trust">
+              <span>🎯Talento local</span><span>👏 Sin coste salarial ni cotizaciones</span
+              ><span>⛓️‍💥 Sin obligación de contratar</span>
+            </div>
+          </div>
+          <div class="hero-art">
+            <div class="photo-shell hero-photo">
+              <img
+                data-photo
+                src="./assets/photos/alumnado-aula.webp"
+                alt="Estudiantes del IES Castillo de Luna trabajando en el aula de Informática"
+                decoding="async"
+              />
+              <div class="photo-placeholder">
+                <div class="screen-illus">
+                  <span class="illus-top"><i></i><i></i><i></i></span
+                  ><span class="code-lines"><i></i><i></i><i></i><i></i><i></i></span
+                  ><b>&lt;/&gt;</b>
+                </div>
+                <p>Próximamente: nuestro alumnado en clase</p>
+              </div>
+            </div>
+            <div class="float-tag upper">
+              <span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-laptop"></use></svg></span><b>SMR + DAM</b><small>Dos perfiles complementarios</small>
+            </div>
+            <div class="float-tag lower">
+              <span>✓</span><b>El mejor encaje</b><small>Competencias + necesidades</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="benefits chapter"
+        id="ventajas"
+        data-label="¿Qué gana mi empresa?"
+        aria-labelledby="benefits-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow"><span>02</span> ¿QUÉ GANA TU EMPRESA?</span>
+            <h2 id="benefits-title">
+              Conecta con talento local.<br /><em>Suma nuevas capacidades.</em>
+            </h2>
+            <p>
+              Una colaboración sencilla y acompañada para conectar lo que tu empresa necesita con lo
+              que nuestro alumnado sabe hacer y pueda seguir aprendiendo.
+            </p>
+          </div>
+          <div class="benefits-grid">
+            <article>
+              <span class="benefit-icon"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-users"></use></svg></span>
+              <h3>Talento local preparado para aportar valor</h3>
+              <p>
+                Jóvenes de nuestro entorno con formación técnica, iniciativa y ganas de implicarse.
+                Valoramos conocimientos, madurez y motivación para proponer el mejor perfil.
+              </p>
+            </article>
+            <article>
+              <span class="benefit-icon"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-shield"></use></svg></span>
+              <h3>Sin coste salarial ni cotizaciones</h3>
+              <p>
+                Estancias formativas no remuneradas. La Junta de Andalucía asume las cotizaciones a
+                la Seguridad Social. Sin obligación de contratación posterior.
+              </p>
+            </article>
+            <article>
+              <span class="benefit-icon"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-target"></use></svg></span>
+              <h3>El perfil que necesitas</h3>
+              <p>Valoramos competencias, intereses y autonomía antes de proponerte alumnado.</p>
+            </article>
+            <article>
+              <span class="benefit-icon"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-handshake"></use></svg></span>
+              <h3>Menos gestiones</h3>
+              <p>Nuestro centro prepara y gestiona la documentación necesaria.</p>
+            </article>
+          </div>
+      </section>
+
+      <section
+        class="profiles chapter"
+        id="perfiles"
+        data-label="¿Quiénes y cuándo?"
+        aria-labelledby="profiles-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow"><span>03</span> ¿QUÉ TALENTO PUEDE ENCAJAR?</span>
+            <h2 id="profiles-title">
+              Dos perfiles tecnológicos.<br /><em>Muchas formas de aportar.</em>
+            </h2>
+            <p>
+              Tanto si quieres reforzar el soporte tecnológico como avanzar en digitalización,
+              podemos encontrar un perfil que encaje con tu actividad. Pincha en cada ciclo y
+              descubre qué podemos aportar.
+            </p>
+          </div>
+          <div class="cycle-switch" role="tablist" aria-label="Seleccionar ciclo formativo">
+            <button
+              role="tab"
+              id="tab-dam"
+              aria-controls="cycle-panel"
+              aria-selected="true"
+              tabindex="0"
+              class="selected"
+              data-cycle="dam"
+              type="button"
+            >
+              <span class="cycle-pill">GS</span
+              ><span
+                ><strong>DAM</strong
+                ><small
+                  >Desarrollo de software y aplicaciones · Datos · Soluciones digitales</small
+                ></span
+              ><span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-laptop"></use></svg></span></button
+            ><button
+              role="tab"
+              id="tab-smr"
+              aria-controls="cycle-panel"
+              aria-selected="false"
+              tabindex="-1"
+              data-cycle="smr"
+              type="button"
+            >
+              <span class="cycle-pill">GM</span
+              ><span
+                ><strong>SMR</strong
+                ><small>Equipos · Sistemas · Redes · Mantenimiento </small></span
+              ><span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-sparkles"></use></svg></span>
+            </button>
+          </div>
+          <div
+            class="cycle-panel"
+            role="tabpanel"
+            id="cycle-panel"
+            tabindex="0"
+            aria-labelledby="tab-dam"
+          >
+            <div class="cycle-overview">
+              <div>
+                <span class="eyebrow" id="cycle-kicker"
+                  >GRADO SUPERIOR · DESARROLLO DE APLICACIONES MULTIPLATAFORMA</span
+                >
+                <h3 id="cycle-title">Tecnología que conecta aplicaciones, datos y procesos.</h3>
+                <p id="cycle-description">
+                  DAM no es solo programación. Nuestro alumnado combina desarrollo de software con
+                  bases de datos, interfaces, integración de herramientas, automatización y
+                  soluciones para el trabajo diario.
+                </p>
+                <div class="skill-chips" id="cycle-skills"></div>
+              </div>
+              <div class="cycle-image">
+                <img
+                  data-photo
+                  id="cycle-photo"
+                  src="./assets/photos/dam-proyecto.webp"
+                  alt="Alumnado de DAM desarrollando aplicaciones y colaborando en un proyecto"
+                />
+                <div class="cycle-photo-fallback">
+                  <span>◈</span><strong>Aprender haciendo.</strong
+                  ><small>Espacio para una foto real de nuestro alumnado</small>
+                </div>
+              </div>
+            </div>
+            <div class="cycle-course-heading">
+              <div>
+                <span class="eyebrow">¿QUÉ APORTA CADA NIVEL?</span>
+                <h4>Distinta experiencia, oportunidades para contribuir.</h4>
+              </div>
+              <p>
+                Formación realista, tareas acordadas y supervisión proporcional a su experiencia.
+              </p>
+            </div>
+            <div class="year-grid" id="year-grid" aria-live="polite"></div>
+            <div class="cycle-calendar" id="cycle-calendar">
+              <div class="calendar-heading">
+                <span class="eyebrow">¿CUÁNDO SE INCORPORAN?</span>
+                <h4 id="calendar-title">Un calendario pensado para aprender y colaborar.</h4>
+              </div>
+              <div class="months" aria-hidden="true">
+                <span>FEB</span><span>MAR</span><span>ABR</span><span>MAY</span><span>JUN</span>
+              </div>
+              <div class="timeline-rows" id="timeline-rows"></div>
+              <p class="timeline-note" id="timeline-note"></p>
+            </div>
+            <div class="cycle-actions">
+              <a href="#contacto" class="button button-primary" id="cycle-cta"
+                >¿Encajaría DAM en tu empresa? <span>→ Hablemos</span></a
+              ><button class="switch-other" id="cycle-other" type="button">
+                Ver SMR <span>→</span>
+              </button>
+            </div>
+      </section>
+
+      <section
+        class="process chapter"
+        id="proceso"
+        data-label="¿Cómo colaboramos?"
+        aria-labelledby="process-title"
+      >
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow"><span>04</span> ¿CÓMO EMPEZAMOS?</span>
+            <h2 id="process-title">
+              Tú nos cuentas el reto.<br /><em>Nosotros buscamos el encaje.</em>
+            </h2>
+            <p>
+              No necesitas tener una plaza definida ni diseñar un proyecto especial. Basta con
+              contarnos cómo trabajáis y en qué tareas tendría sentido aprender y colaborar.
+            </p>
+          </div>
+          <div class="process-steps">
+            <article>
+              <span class="process-num">01 <b><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chat"></use></svg></b></span>
+              <h3>Breve contacto para conocer tu empresa</h3>
+              <p>
+                Nuestro objetivo es asegurar que la colaboración sea beneficiosa para ambas partes.
+              </p>
+            </article>
+            <article>
+              <span class="process-num">02 <b><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-search"></use></svg></b></span>
+              <h3>Elegimos el mejor encaje</h3>
+              <p>
+                Contrastamos la actividad con conocimientos, intereses, motivación y autonomía del
+                alumnado.
+              </p>
+            </article>
+            <article>
+              <span class="process-num">03 <b><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-check"></use></svg></b></span>
+              <h3>Te acompañamos durante la estancia</h3>
+              <p>
+                Nos encargamos de gestionar los trámites y la documentación, así como del
+                seguimiento del alumnado. La empresa designa una persona tutora y facilita el
+                entorno, los medios y la supervisión adecuados.
+              </p>
+            </article>
+          </div>
+          <div class="qna">
+            <div>
+              <h3>Dudas frecuentes</h3>
+              <p>Respuestas claras, antes de empezar.</p>
+            </div>
+            <div class="qna-list">
+              <details>
+                <summary>¿Tiene algún coste económico recibir alumnado? <span>+</span></summary>
+                <p>
+                  No hay remuneración ni cotizaciones a la Seguridad Social a cargo de la empresa.
+                  La Consejería de Desarrollo Educativo y Formación Profesional de la Junta de
+                  Andalucía gestiona y asume esas cotizaciones conforme al convenio. La empresa
+                  facilita el entorno formativo, una persona tutora y los medios necesarios para las
+                  actividades acordadas.
+                </p>
+              </details>
+              <details>
+                <summary>¿Está cubierto el alumnado durante su estancia? <span>+</span></summary>
+                <p>
+                  Sí. El alumnado está dado de alta en la Seguridad Social, con protección frente a
+                  contingencias profesionales derivadas de la actividad formativa. La Junta de
+                  Andalucía asume la cobertura de responsabilidad civil del alumnado de los centros
+                  docentes públicos.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  ¿Me comprometo a contratar después o a continuar colaborando? <span>+</span>
+                </summary>
+                <p>
+                  No. La estancia es formativa y no implica contratar al estudiante al terminar,
+                  reservarle un puesto ni asumir nuevas colaboraciones. Si la experiencia es
+                  positiva, ambas partes podrán explorar oportunidades futuras libremente.
+                </p>
+              </details>
+              <details>
+                <summary>
+                  ¿Tengo que preparar un proyecto o dedicar una persona exclusivamente?
+                  <span>+</span>
+                </summary>
+                <p>
+                  No hace falta crear un proyecto especial. El objetivo es aprovechar tareas reales
+                  de la empresa vinculadas a los conocimientos del alumnado.
+                </p>
+              </details>
+            </div>
+          </div>
+          <div class="trust" id="colaboraciones" hidden>
+            <span class="eyebrow">RELACIONES REALES</span>
+            <h3>Entidades con las que hemos colaborado</h3>
+            <div class="trust-list" id="trust-list"></div>
+            <small>Referencias históricas verificadas. No implican patrocinio actual.</small>
+      </section>
+
+      <section
+        class="contact chapter"
+        id="contacto"
+        data-label="¿Hablamos?"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-layout">
+          <div class="contact-message">
+            <span class="eyebrow light"><span>05</span> CONECTAR PARA CRECER</span>
+            <h2 id="contact-title">
+              El siguiente talento de tu equipo<br /><em>puede estar muy cerca.</em>
+            </h2>
+            <p>
+              No necesitas tener una propuesta cerrada. Buscaremos juntos oportunidades para que
+              nuestro alumnado pueda aportar y crecer, con un encaje que tenga sentido para ambas
+              partes. Te explicamos las posibilidades de SMR y DAM y exploramos el encaje, sin
+              compromiso.
+            </p>
+            <p class="eyebrow light">
+              Una conversación puede abrir nuevas oportunidades para todos.
+            </p>
+          </div>
+          <div class="contact-form-card">
+            <h3>Escríbenos y nos pondremos en contacto</h3>
+            <p>Déjanos tus datos y te responderemos. Puedes proponer un horario o una videollamada.</p>
+            <form id="contact-form" novalidate method="POST">
+              <input type="hidden" name="_subject" value="Nueva consulta · Ruta del Talento" />
+              <div class="form-trap" aria-hidden="true"><label for="contact-website">Deja este campo vacío</label><input id="contact-website" name="_gotcha" tabindex="-1" autocomplete="off" /></div>
+              <label for="contact-name">Nombre de la persona de contacto <b>*</b></label
+              ><input
+                id="contact-name"
+                name="nombre"
+                required
+                autocomplete="name"
+                placeholder="Nombre y apellidos"
+              /><label for="company">Empresa u organización <b>*</b></label
+              ><input
+                id="company"
+                name="empresa"
+                required
+                autocomplete="organization"
+                placeholder="Nombre de la empresa"
+              /><label for="email">Correo de contacto <b>*</b></label
+              ><input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                placeholder="nombre@empresa.es"
+              /><label for="phone">Teléfono <small>(opcional)</small></label
+              ><input type="tel" id="phone" name="telefono" autocomplete="tel" inputmode="tel" placeholder="Por si prefieres que te llamemos" maxlength="45" /><label for="topic">Me interesa</label
+              ><select id="topic" name="interes">
+                <option value="Valorar posibilidades">Valorar posibilidades</option>
+                <option value="SMR">SMR · Sistemas y redes</option>
+                <option value="DAM">DAM · Aplicaciones y digitalización</option>
+                <option value="Explorar">Me gustaría explorar posibilidades</option></select
+              ><label for="message">¿Qué necesitas? <small>(opcional)</small></label
+              ><textarea
+                id="message"
+                name="necesidades"
+                rows="3"
+                maxlength="2500"
+                placeholder="Por ejemplo: soporte informático, redes, una aplicación, datos, automatización o ideas por explorar"
+              ></textarea
+              ><label for="availability">¿Cuándo te viene bien que hablemos? <small>(opcional)</small></label
+              ><textarea id="availability" name="disponibilidad" rows="2" maxlength="700" placeholder="Por ejemplo: martes o jueves por la mañana, de 10:00 a 13:00. También podemos hablar por Google Meet."></textarea
+              ><p class="form-privacy">Utilizaremos tus datos para responder a tu consulta. El formulario se envía a través del servicio externo Formspree. No incluyas datos sensibles.</p
+              ><button type="submit" id="contact-submit" class="button button-primary">Enviar consulta <svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-send"></use></svg></button>
+              <p class="form-note">
+                Envío directo desde esta página, sin abrir tu aplicación de correo. No compartas información confidencial.
+              </p>
+              <p class="form-feedback" id="form-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+              <p class="form-alternative">¿Prefieres escribir directamente? <a href="mailto:jarcdia091@g.educaand.es">jarcdia091@g.educaand.es</a></p>
+              <a id="meeting-link" class="meeting-link" hidden target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-calendar"></use></svg> Reservar una videollamada</a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img class="footer-logo" src="./assets/LogoInstituto.svg" alt="Logotipo del IES Castillo de Luna" />
+          <div class="footer-copy">
+            <p>IES Castillo de Luna · Rota (Cádiz)<br />SMR y DAM · Formación Profesional</p>
+            <p class="footer-message">Comprometidos con la educación.</p>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <span>© <span id="year"></span> IES Castillo de Luna</span>
+        </div>
+      </div>
+    </footer>
+    <a href="#contacto" class="mobile-cta" id="mobile-cta">Hablemos de tu empresa <svg class="ui-icon" aria-hidden="true" focusable="false"><use href="#icon-chat"></use></svg></a>
+    <a
+      href="#inicio"
+      class="back-to-top"
+      id="back-to-top"
+      aria-label="Volver al inicio"
+      title="Volver al inicio"
+      ><span aria-hidden="true">↑</span></a
+    >
+  </body>
+</html>
