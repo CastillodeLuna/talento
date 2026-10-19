@@ -1,4 +1,4 @@
-/* Ruta del Talento: una landing guiada, accesible y preparada para GitHub Pages. */
+
 (() => {
   'use strict';
   const $ = (sel) => document.querySelector(sel),
