@@ -389,3 +389,40 @@ html,body{overflow-x:clip}
 .google-form-alternative a,.google-form-direct a{color:#1769b8;font-weight:760}
 .google-form-alternative a:hover,.google-form-direct a:hover{color:#0c4d91}
 @media(max-width:680px){.contact-form-card:has(.google-form-embed){padding:24px 18px 20px}.google-form-embed{height:1235px;border-radius:10px}.google-form-embed iframe{width:calc(100% + 30px);height:1700px;border-radius:10px;transform:translate(-15px,-180px)}.google-form-embed:after{height:62px}}
+
+/* Ajustes de integración del formulario y de los puntos de ruptura del contenido. */
+.cycle-switch small span + span::before{content:" · "}
+.google-form-feedback{margin:18px 0 0!important;padding:12px 14px;border:1px solid #b9ddf6;border-radius:10px;background:#eef8ff;color:#175d9d!important;font-size:14px!important;font-weight:700;line-height:1.5}
+.google-form-embed.is-submitted{height:460px}
+.google-form-embed.is-submitted iframe{transform:translateX(-26px)}
+.google-form-embed.is-submitted:after{display:none}
+
+/* Desde tablet, la tarjeta de contacto se lee como una sola columna. */
+@media(max-width:1100px){
+ .contact-layout{grid-template-columns:1fr;border-radius:21px}
+ .contact-message{padding:34px 25px 25px}
+ .contact h2{font-size:38px;margin:19px 0 14px}
+ .contact-message>p{font-size:12px}
+ .contact-quote{margin-top:19px;font-size:11px}
+ .contact-form-card{margin:7px;padding:24px 20px}
+}
+
+/* La etiqueta estrecha de DAM se desplaza fuera del bloque para conservar legibilidad. */
+@media(max-width:1150px){
+ #cycle-panel[data-cycle="dam"] .timeline-bar.intro{font-size:0!important;padding-inline:0}
+ #cycle-panel[data-cycle="dam"] .timeline-small-label{justify-self:end;margin-right:18%;text-align:right}
+}
+
+@media(max-width:680px){
+ .google-form-embed{height:1520px}
+ .google-form-embed iframe{height:1780px}
+ .google-form-embed.is-submitted{height:460px}
+ .google-form-embed.is-submitted iframe{transform:translateX(-15px)}
+}
+
+/* En móviles estrechos, cada ámbito de cada ciclo ocupa su propia línea. */
+@media(max-width:500px){
+ .cycle-switch small{display:grid;gap:1px}
+ .cycle-switch small span{display:block}
+ .cycle-switch small span + span::before{content:"· ";color:#2c76ba;font-weight:800}
+}

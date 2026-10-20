@@ -1,4 +1,4 @@
-
+/* Ruta del Talento: una landing guiada, accesible y preparada para GitHub Pages. */
 (() => {
   'use strict';
   const $ = (sel) => document.querySelector(sel),
@@ -257,5 +257,20 @@
     realPartners.forEach((p) => list.append(node('span', p.name, 'trust-name')));
     section.hidden = false;
   }
+  // Google Forms navega el iframe después de enviar. Al dejar de recortarlo en ese
+  // momento, la pantalla de confirmación queda visible en lugar de parecer vacía.
+  const googleFormFrame = $('.google-form-embed iframe');
+  const googleFormEmbed = $('.google-form-embed');
+  const googleFormFeedback = $('#google-form-feedback');
+  let googleFormInitialLoad = true;
+  googleFormFrame?.addEventListener('load', () => {
+    if (googleFormInitialLoad) {
+      googleFormInitialLoad = false;
+      return;
+    }
+    googleFormEmbed.classList.add('is-submitted');
+    googleFormFeedback.hidden = false;
+    googleFormFeedback.focus({ preventScroll: true });
+  });
   $('#year').textContent = new Date().getFullYear();
 })();
