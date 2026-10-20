@@ -304,7 +304,7 @@ html,body{overflow-x:clip}
  .route-rail a{width:24px}
  .route-rail a i{width:14px;height:14px;border-width:3px}
  .rail-bg,.rail-fill{left:6px}
- .rail-traveler{left:-4px}
+ .rail-traveler{left:-8px}
 }
 @media(max-width:680px){
  .hero-layout{grid-template-columns:minmax(0,1fr)}
